@@ -9,6 +9,27 @@
         .hero-gradient {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
         }
+        img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+        }
+        a, button, input, select, textarea {
+            -webkit-tap-highlight-color: transparent;
+            touch-action: manipulation;
+        }
+        a, button, input, select, textarea, .btn {
+            min-height: 44px;
+        }
+        @media (max-width: 768px) {
+            body {
+                overflow-x: hidden;
+            }
+            .grid > div,
+            .grid > article {
+                min-width: 0;
+            }
+        }
     </style>
 </head>
 <body class="bg-white">

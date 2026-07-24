@@ -16,6 +16,27 @@
             background: linear-gradient(45deg, transparent 48%, #f3f4f6 48%, #f3f4f6 52%, transparent 52%);
             background-size: 50px 50px;
         }
+        img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+        }
+        a, button, input, select, textarea {
+            -webkit-tap-highlight-color: transparent;
+            touch-action: manipulation;
+        }
+        a, button, input, select, textarea, .btn {
+            min-height: 44px;
+        }
+        @media (max-width: 768px) {
+            body {
+                overflow-x: hidden;
+            }
+            .grid > div,
+            .grid > article {
+                min-width: 0;
+            }
+        }
     </style>
 </head>
 <body class="bg-white">
